@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Menghitung Luas</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mb-3">
+        <div class="col">
+          <h4 class="text-center">Menghitung Luas</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="luas-persegi-panjang">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Luas Persegi Panjang
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="luas-persegi-panjang" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="alert alert-warning alert-dismissible fade show d-none alert-persegi-panjang" role="alert">
+                  <strong>Panjang dan lebar tidak boleh kosong!</strong>
+                  <button type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="input-group mb-3">
+                      <input type="number" class="form-control panjang-persegi-panjang" placeholder="Panjang" aria-label="Panjang" aria-describedby="basic-addon1" required>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="input-group mb-3">
+                      <input type="number" class="form-control lebar-persegi-panjang" placeholder="Lebar" aria-label="Lebar" aria-describedby="basic-addon1" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col">
+                    <button type="button" class="btn btn-secondary btn-sm hitung-luas-persegi-panjang">Hitung</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <h4 class="hasil-luas-persegi-panjang"></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="luas-persegi">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Luas Persegi
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="luas-persegi" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="alert alert-warning alert-dismissible fade show d-none alert-persegi" role="alert">
+                  <strong>Sisi tidak boleh kosong!</strong>
+                  <button type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="input-group mb-3">
+                      <input type="number" class="form-control sisi-persegi" placeholder="Sisi" aria-label="Sisi" aria-describedby="basic-addon1" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col">
+                    <button type="button" class="btn btn-secondary btn-sm hitung-luas-persegi">Hitung</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <h4 class="hasil-luas-persegi"></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
